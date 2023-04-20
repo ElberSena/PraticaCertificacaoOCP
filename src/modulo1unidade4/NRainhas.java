@@ -6,9 +6,7 @@ package modulo1unidade4;
 //        Tem que implementar o algoritmo de ordenação, portanto não é permitido
 //        usar nenhum tipo de métodos do Java ou bibliotecas externas.
 
-import java.sql.Array;
-import java.util.Arrays;
-import java.util.Collections;
+
 import java.util.Scanner;
 
 public class NRainhas {
@@ -20,13 +18,34 @@ public class NRainhas {
         System.out.println("Quantos números quer ordenar: ");
         int tamanho = sc.nextInt();
 
-        Integer decrecente [] = new Integer[tamanho];
-        System.out.println("Digite os numeros que você quer ordenar:");
-        for (int i = 0; i <  decrecente.length; i++) {
-           decrecente[i] = sc.nextInt();
+        int[] array = new int[tamanho];
+        for (int i = 0; i < array.length; i++){
+            System.out.println("Digite o numero:");
+            array[i] = sc.nextInt();
         }
 
-        Arrays.sort(decrecente, Collections.reverseOrder());
-        System.out.println("A ordem descecente do array: " + Arrays.toString(decrecente));
+        selectionSort(array);
+        for (int i= 0; i < array.length; i++ ){
+            System.out.println(array[i]);
+        }
+
+    }
+
+    public static void selectionSort(int[] array){
+        for (int fixo = 0; fixo < array.length - 1; fixo ++){
+            int maior = fixo;
+
+            for (int i = maior; i < array.length; i++){
+                if (array[i] > array[maior]){
+                    maior = i;
+                }
+            }
+            if (maior != fixo){
+                int p = array[fixo];
+                array[fixo] = array[maior];
+                array[maior] = p;
+            }
+        }
     }
 }
+

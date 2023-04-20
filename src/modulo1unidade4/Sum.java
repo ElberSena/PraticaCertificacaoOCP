@@ -7,7 +7,7 @@ public class Sum {
 
         Sum s = new Sum();
 
-        System.out.println(s.sumvarargs(1,2,35667,3));
+        System.out.println(s.sumvarargs(1,2,3,4,5,6,7));
 
 
     }
