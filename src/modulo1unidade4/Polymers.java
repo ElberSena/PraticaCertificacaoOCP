@@ -9,7 +9,6 @@ public class Polymers {
 
         System.out.println(polimero(teste));
     }
-
     public static StringBuilder polimero(StringBuilder poli){
         StringBuilder novaPoli = poli;
         for (int s = 0; s < poli.length(); s++) {
