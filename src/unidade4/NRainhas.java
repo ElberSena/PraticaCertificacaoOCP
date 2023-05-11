@@ -1,4 +1,4 @@
-package modulo1unidade4;
+package unidade4;
 
 //Nesta atividade prática, deverá criar um programa que, ao receber um array
 //        de inteiros (independentemente do tamanho), o programa ordena o array de

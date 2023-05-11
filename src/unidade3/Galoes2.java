@@ -1,4 +1,4 @@
-package modulo1unidade3;
+package unidade3;
 //Nessa atividade prática, deverás criar um programa que imprima uma tabela de
 //        conversão de polegadas em metros.
 public class Galoes2 {

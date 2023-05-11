@@ -1,4 +1,4 @@
-package modulo1unidade4;
+package unidade4;
 
 //Nessa atividade prática, deverás escrever uma função que dado um polímero
 //        representado com as letras do alfabeto (maiúsculas e minúsculas), processa as

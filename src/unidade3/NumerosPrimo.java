@@ -1,4 +1,4 @@
-package modulo1unidade3;
+package unidade3;
 //Nessa atividade prática, deverás criar um programa que procure e imprima por ecrã todos os
 //números primos entre 2 e 100 (Crivo de Eratóstenes).
 public class NumerosPrimo {

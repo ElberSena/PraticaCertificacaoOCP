@@ -1,4 +1,4 @@
-package modulo1unidade4;
+package unidade4;
 
 import java.util.Arrays;
 import java.util.Scanner;

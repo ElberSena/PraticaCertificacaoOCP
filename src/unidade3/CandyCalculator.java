@@ -1,4 +1,4 @@
-package modulo1unidade3;
+package unidade3;
 /*
     O método candyCalculator deve receber um número de créditos e imprimir
     quantos chocolates e quantas chicletes conseguimos comprar com esse

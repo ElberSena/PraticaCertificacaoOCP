@@ -1,4 +1,4 @@
-package modulo1unidade4;
+package unidade4;
 //Nessa atividade prática, deverás criar um método com o número sum() que utilize varargs
 //        para somar um número indeterminado de valores inteiros e devolver o resultado.
 

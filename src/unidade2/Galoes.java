@@ -1,4 +1,4 @@
-package modulo1unidade2;
+package unidade2;
 
 /*A gravidade da Lua é aproximadamente 17% da gravidade da Terra. Nessa atividade
  prática, deverás criar um programa para que, dado um peso da Terra, se calcule o

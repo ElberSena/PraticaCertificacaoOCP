@@ -1,4 +1,4 @@
-package modulo1unidade3;
+package unidade3;
 
 /*Nessa atividade prática, deverás criar um programa que leia caracteres do teclado até
 receber um ponto. O programa deve contar o número de espaços. Indicar o total de espaços

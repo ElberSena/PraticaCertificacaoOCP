@@ -1,4 +1,4 @@
-package modulo1unidade3;
+package unidade3;
 //A função de Ackermann é um exemplo de uma função computável que não é função
 //        recursiva primitiva. Todas as funções recursivas primitivas são totais e computáveis,
 //        mas a função de Ackermann mostra que nem toda a função total-computável é

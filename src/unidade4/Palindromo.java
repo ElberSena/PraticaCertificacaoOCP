@@ -1,4 +1,4 @@
-package modulo1unidade4;
+package unidade4;
 
 //Exemplos de palíndromos:
 //        “Radar” (ignorar as diferenças entre maiúsculas e minúsculas)
