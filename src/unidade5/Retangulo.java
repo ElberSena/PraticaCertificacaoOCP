@@ -13,6 +13,14 @@ package unidade5;
 //        ● Um método gira que roda o ângulo atual a 90 graus (intercambiada a base pela
 //        altura).
 public class Retangulo {
+    public static void main(String[] args) {
+        Retangulo reto = new Retangulo();
+        System.out.println(reto.area());
+
+        Retangulo reto2 = new Retangulo(3,3);
+
+        System.out.println(reto2.esquadria());
+    }
 
     private double base;
     private double altura;
