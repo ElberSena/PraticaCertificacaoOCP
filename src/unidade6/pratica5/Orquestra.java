@@ -24,16 +24,8 @@ public class Orquestra {
         listaInstrumentos.add(cordas);
         listaInstrumentos.add(cordas1);
 
-        for (Instrumento i : listaInstrumentos) System.out.println(i.toString());
+        for (Instrumento i : listaInstrumentos)  System.out.println(i);
 
-        System.out.println(percussao1.tocar("Sol"));
-
-        /***
-         * Falta implementar o método tocar da classe main
-         */
-        for (Instrumento i : listaInstrumentos){
-            System.out.println(i);
-        }
 
     }
 }
