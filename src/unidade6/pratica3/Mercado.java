@@ -9,8 +9,12 @@ public class Mercado {
     private static List<Funcionario> funcionarioListMercado;
 
     public static void funcionariosMercado (){
-        for (Funcionario func : funcionarioListMercado) {
-            JOptionPane.showMessageDialog(null, func);
+        if (funcionarioListMercado.size() == 0) {
+            JOptionPane.showMessageDialog(null, "Nenhum funcionário cadastrado.");
+        } else {
+            for (Funcionario func : funcionarioListMercado) {
+                JOptionPane.showMessageDialog(null, func);
+            }
         }
     }
     public static void main(String[] args) {

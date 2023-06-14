@@ -14,15 +14,14 @@ public class Repositor extends Funcionario{
 
     @Override
     public String toString() {
-        return "Repositores{" +
-                "nome='" + getNome() + '\'' +
-                "\n apelido='" + getApelido() + '\'' +
-                "\n numIdentificacao='" + getNumIdentificacao() + '\'' +
-                "\n morada='" + getMorada() + '\'' +
-                "\n telefone='" + getTelefone() + '\'' +
-                "\n segurancaSocial='" + getSegurancaSocial() + '\'' +
-                "\n salario=" + getSalario() +
-                "\n turno='" + getTurno() + '\'' +
-                '}';
+        return "Repositores" +
+                "\n nome: " + getNome() +
+                "\n apelido: " + getApelido() +
+                "\n numIdentificacao='" + getNumIdentificacao() +
+                "\n morada: " + getMorada() +
+                "\n telefone: " + getTelefone() +
+                "\n segurancaSocial: " + getSegurancaSocial() +
+                "\n salario: " + getSalario() +
+                "\n turno: " + getTurno();
     }
 }

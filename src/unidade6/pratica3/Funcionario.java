@@ -44,15 +44,14 @@ public class Funcionario extends Pessoa {
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "\n nome='" + getNome() + '\'' +
-                "\n apelido='" + getApelido() + '\'' +
-                "\n numIdentificacao='" + getNumIdentificacao() + '\'' +
-                "\n morada='" + getMorada() + '\'' +
-                "\n telefone='" + getTelefone() + '\'' +
-                "\n segurancaSocial='" + segurancaSocial + '\'' +
-                "\n salario=" + salario +
-                "\n turno='" + turno + '\'' +
-                '}';
+        return "Funcionario" +
+                "\n nome: " + getNome() +
+                "\n apelido: " + getApelido() +
+                "\n numIdentificacao: " + getNumIdentificacao() +
+                "\n morada: " + getMorada() +
+                "\n telefone: " + getTelefone() +
+                "\n segurancaSocial: " + segurancaSocial +
+                "\n salario: " + salario +
+                "\n turno: " + turno;
     }
 }

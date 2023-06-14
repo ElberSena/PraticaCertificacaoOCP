@@ -24,15 +24,14 @@ public class Subcontratado extends Funcionario{
     @Override
     public String toString() {
         return "Subcontratado{" +
-                "nome='" + getNome() + '\'' +
-                "\n apelido='" + getApelido() + '\'' +
-                "\n numIdentificacao='" + getNumIdentificacao() + '\'' +
-                "\n morada='" + getMorada() + '\'' +
-                "\n telefone='" + getTelefone() + '\'' +
-                "\n segurancaSocial='" + getSegurancaSocial() + '\'' +
-                "\n salario=" + getSalario() +
-                "\n turno='" + getTurno() + '\'' +
-                "\n especialidade='" + especialidade + '\'' +
-                '}';
+                "\n nome: " + getNome() +
+                "\n apelido: " + getApelido() +
+                "\n numIdentificacao: " + getNumIdentificacao() +
+                "\n morada: " + getMorada() +
+                "\n telefone: " + getTelefone() +
+                "\n segurancaSocial: " + getSegurancaSocial() +
+                "\n salario: " + getSalario() +
+                "\n turno: " + getTurno() +
+                "\n especialidad: " + especialidade;
     }
 }

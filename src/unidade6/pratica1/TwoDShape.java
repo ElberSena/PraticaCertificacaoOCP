@@ -1,4 +1,4 @@
-package unidade6;
+package unidade6.pratica1;
 
 public class TwoDShape {
     private int base;
