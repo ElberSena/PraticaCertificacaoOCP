@@ -14,6 +14,7 @@ public class Administrativo extends Pessoal{
         this.departamento = departamento;
     }
 
+    @Override
     public void salario(){
         int quantExtra = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de horas extras:"));
         if (quantExtra > 0){

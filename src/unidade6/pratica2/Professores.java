@@ -2,9 +2,10 @@ package unidade6.pratica2;
 
 import javax.swing.*;
 
-public class Professores extends Pessoal{
+public class Professores extends Pessoal {
     private String departamento;
-    private String avaliacao;
+    private static String avaliacao;
+    private static int cont = 7;
 
     public Professores(){
 
@@ -14,9 +15,20 @@ public class Professores extends Pessoal{
         this.departamento = departamento;
     }
 
-    public void salario(){
-        this.salario = ((37 * 8) * 4);
+    @Override
+    public void salario() {
+        avaliacao = JOptionPane.showInputDialog(null,"Avalição do período: Positivo ou Negativo");
+        if (avaliacao.equalsIgnoreCase("Positivo")){
+            this.salario = ((37 * 8) * 4 + 100);
+            cont -= 1;
+        }else {
+            this.salario = ((37 * 8) * 4);
+        }
+        if (cont == 0){
+            this.salario = ((37 * 8) * 4);
+        }
     }
+
     public String getDepartamento() {
         return departamento;
     }
@@ -25,19 +37,12 @@ public class Professores extends Pessoal{
         this.departamento = departamento;
     }
 
-    public String getAvaliacao() {
-        return avaliacao;
-    }
-
-    public void setAvaliacao(String avaliacao) {
-        this.avaliacao = avaliacao;
-    }
     @Override
     public String toString() {
-        return "Professor " +
+        return "Professores" +
                 "\nNome: " + getNome() +
                 "\nCartão Cidadão: " + getCC() +
-                "\nsalario: " + salario +
-                "\ndepartamento: " + departamento;
+                "\ndepartamento: " + departamento +
+                "\n salario: " + salario;
     }
 }

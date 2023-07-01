@@ -7,7 +7,9 @@ import java.util.List;
 
 public class Universidade {
 
-    static List<Pessoal> listaPessoa;
+    public static List<Pessoal> listaPessoa = new ArrayList<>();
+
+
     public static void imprimirNominas() {
         if (listaPessoa.size() > 0) {
             for (Pessoal p : listaPessoa) {
@@ -17,19 +19,18 @@ public class Universidade {
             JOptionPane.showMessageDialog(null, "Lista vazia.");
         }
     }
-    public static void obterOrcamentoTotal(){
-        double orcamento = 0d;
-        for (int i = 0; i <= listaPessoa.size(); i++){
-            orcamento += listaPessoa.get(i).getSalario();
-            i++;
-
-        }
-        JOptionPane.showMessageDialog(null, "Gasto com pessoal de " + orcamento + " euros." +
-                "");
-    }
+//    public static double obterOrcamentoTotal(){
+//        double orcamento = 0d;
+//        for (int i = 0; i <= listaPessoa.size(); i++){
+//
+//            orcamento += listaPessoa.;
+//
+//        }
+//        return orcamento;
+//    }
 
     public static void main(String[] args) {
-        listaPessoa = new ArrayList<Pessoal>();
+        listaPessoa = new ArrayList<>();
         menuOperacoes();
     }
 
@@ -110,8 +111,18 @@ public class Universidade {
         Professores professores = new Professores();
         professores.setNome(JOptionPane.showInputDialog("Nome:"));
         professores.setCC(JOptionPane.showInputDialog("Cartão Cidadão:"));
+        professores.salario();
         professores.setDepartamento("PDI");
         listaPessoa.add(professores);
         JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
     }
+
+    public static void obterOrcamentoTotal(){
+        double orcamento = 0d;
+        for (int i = 0; i < listaPessoa.size(); i++){
+            orcamento += listaPessoa.get(i).getSalario();
+        }
+        JOptionPane.showMessageDialog(null, orcamento);
+    }
+
 }

@@ -13,7 +13,7 @@ public class Informatico extends Pessoal{
         super(nome, CC, salario);
         this.departamento = departamento;
     }
-
+    @Override
     public void salario(){
         int quantExtra = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de horas extras:"));
         if (quantExtra > 0){

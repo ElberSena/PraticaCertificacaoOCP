@@ -14,7 +14,7 @@ public class Circle extends TwoDShape{
     }
 
     public double area(){
-        return PI * (r^2);
+        return PI * (r * r);
     }
 
     public int getR() {

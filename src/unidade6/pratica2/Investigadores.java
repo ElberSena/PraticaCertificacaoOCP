@@ -11,7 +11,7 @@ public class Investigadores extends Pessoal{
         super(nome, CC, salario);
         this.departamento = departamento;
     }
-
+    @Override
     public void salario(){
         this.salario = ((35 * 7) * 4);
     }
