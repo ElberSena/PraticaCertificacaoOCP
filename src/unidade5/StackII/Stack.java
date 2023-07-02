@@ -1,4 +1,4 @@
-package unidade5;
+package unidade5.StackII;
 
 //Nessa atividade prática, tem de se fazer uma aula de Stack que implemente uma
 //        pilha que armazene caracteres. A pilha deve permitir criar-se através de
@@ -22,8 +22,6 @@ public class Stack {
             System.out.println(" 3 - Para sair.");
             opcao = scan.nextInt();
             if (opcao == 1) {
-                System.out.println("Presione o caracter desejado. Para sair presione ponto '.':");
-                num = scan.next().charAt(0);
                 while (num != '.') {
                     System.out.println("Presione o caracter desejado. Para sair aperte ponto '.':");
                     num = scan.next().charAt(0);
@@ -36,38 +34,27 @@ public class Stack {
             }
         }
     }
-    private static int max = 100;
+    private static int max = 4;
     private int topo;
     private char pilha[] = new char[max];
 
     public Stack(){
         topo = -1;
     }
-    public boolean estaVazia(){
-        return topo == -1;
-    }
-    public boolean estaCheia(){
-        return topo == pilha.length -1;
-    }
 
-    public boolean push (char elemento){
-        if (!estaCheia()){
-            pilha[++topo] = elemento;
-            return true;
-        }else {
-            System.out.println("A pilha está cheia!");
-            return false;
+    public void push (char elemento){
+
+        if (topo == pilha.length -1) {
+            throw new StackFullException();
         }
+        pilha[++topo] = elemento;
+
     }
     public char pop (){
-        if (!estaVazia()){
-            char elemento = pilha[topo--];
-            return elemento;
-        } else {
-            System.out.println("Pilha vazia!");
-            return 0;
+        if (topo == -1) {
+            throw new StackEmptyException();
         }
+        char elemento = pilha[topo--];
+        return elemento;
     }
-
-
 }
