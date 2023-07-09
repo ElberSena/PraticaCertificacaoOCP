@@ -1,4 +1,4 @@
-package unidade7.pratica1;
+package unidade7.CharSequenceTokio;
 
 public interface CharSequenceTokio {
     /**
@@ -39,4 +39,5 @@ public interface CharSequenceTokio {
     caracteres.
      */
     public String toString();
+
 }
