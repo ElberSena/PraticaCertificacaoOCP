@@ -1,4 +1,4 @@
-package unidade5.StackII;
+package modulo1.unidade2.unidade5.StackII;
 
 //Nessa atividade prática, tem de se fazer uma aula de Stack que implemente uma
 //        pilha que armazene caracteres. A pilha deve permitir criar-se através de

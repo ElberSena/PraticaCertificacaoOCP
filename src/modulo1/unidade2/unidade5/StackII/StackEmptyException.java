@@ -1,4 +1,4 @@
-package unidade5.StackII;
+package modulo1.unidade2.unidade5.StackII;
 
 public class StackEmptyException extends RuntimeException{
 
